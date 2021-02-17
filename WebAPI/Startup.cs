@@ -32,8 +32,8 @@ namespace WebAPI
             //service.AddSingolton datasýz olarak oluþturulan intance
             //service.AddScoped datalý olan versiyon
             services.AddControllers();
-            services.AddSingleton<IProductService,ProductManager>(); //IoC ile istemcilerin istedikleri ssoyutlarýn somutlarýnýn yapýlandýrmasý
-            services.AddSingleton<IProductDal, EfProductDal>();
+            //services.AddSingleton<IProductService,ProductManager>(); //IoC ile istemcilerin istedikleri ssoyutlarýn somutlarýnýn yapýlandýrmasý
+            //services.AddSingleton<IProductDal, EfProductDal>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
