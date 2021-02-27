@@ -33,6 +33,7 @@ namespace Business.Concrete
             _categoryservice = categoryService;
         }
 
+        //[SecuredOperation("admin,editor")]
         [ValidationAspect(typeof(ProductValidator))]
         public IResult Add(Product product)
         {
